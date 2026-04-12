@@ -12,7 +12,10 @@
       "mcp__playwright__browser_navigate",
       "Bash(python -m http.server 8899)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8899/)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(sed -n '54,60p' css/article-style.css)",
+      "Bash(sed -n '278,284p' css/article-style.css)",
+      "Bash(sed -n '461,465p' css/article-style.css)"
     ]
   }
 }

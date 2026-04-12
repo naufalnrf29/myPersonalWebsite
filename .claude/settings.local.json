@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sed -n '12,1227p' \"/c/Users/Naufal/Downloads/landingpage/landingPage.html\")",
+      "Bash(sed -n '1939,1994p' \"/c/Users/Naufal/Downloads/landingpage/landingPage.html\")",
+      "Bash(file /c/Users/Naufal/Downloads/landingpage/article/img/*.png /c/Users/Naufal/Downloads/landingpage/article/img/*.jpg)",
+      "Bash(python3:*)",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(wc:*)",
+      "Bash(md5sum:*)",
+      "mcp__playwright__browser_navigate",
+      "Bash(python -m http.server 8899)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8899/)",
+      "Bash(curl:*)"
+    ]
+  }
+}

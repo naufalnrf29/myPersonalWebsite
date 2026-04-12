@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article — Naufal Nur Fanani</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/article-style.css">
+</head>
+
+<body>
+
+    <!-- ─── NAVBAR ─── -->
+    <nav class="navbar">
+        <a href="../../index.html" class="btn-back">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 2L4 7L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Back
+        </a>
+        <a href="#" class="nav-logo">
+            <div class="logo-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <rect x="2" y="2" width="5" height="5" rx="1" fill="rgba(255,255,255,0.75)" />
+                    <rect x="9" y="2" width="5" height="5" rx="1" fill="rgba(255,255,255,0.3)" />
+                    <rect x="2" y="9" width="5" height="5" rx="1" fill="rgba(255,255,255,0.3)" />
+                    <rect x="9" y="9" width="5" height="5" rx="1" fill="rgba(255,255,255,0.5)" />
+                </svg>
+            </div>
+            <div class="logo-text">Naufal<small>Portfolio</small></div>
+        </a>
+    </nav>
+
+    <!-- ─── ARTICLE ─── -->
+    <article class="article-wrap">
+
+        <!-- Tag -->
+        <div class="art-tag reveal">
+            <div class="art-tag-dot"></div>
+            Web Dev
+        </div>
+
+        <!-- Title -->
+        <h1 class="art-title reveal">Monday – Web Inventory Management System</h1>
+
+        <!-- Thumbnail YouTube — klik untuk putar -->
+        <div class="art-thumb reveal">
+            <div class="yt-wrapper" onclick="loadYT(this)" data-id="utqOlaBpAjs">
+                <img src="https://img.youtube.com/vi/utqOlaBpAjs/maxresdefault.jpg" alt="Project Thumbnail">
+                <div class="yt-play">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Card -->
+        <div class="project-card reveal">
+            <div class="pc-logo">
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="none">
+                    <rect x="2" y="2" width="5" height="5" rx="1" fill="rgba(255,255,255,0.75)" />
+                    <rect x="9" y="2" width="5" height="5" rx="1" fill="rgba(255,255,255,0.3)" />
+                    <rect x="2" y="9" width="5" height="5" rx="1" fill="rgba(255,255,255,0.3)" />
+                    <rect x="9" y="9" width="5" height="5" rx="1" fill="rgba(255,255,255,0.5)" />
+                </svg>
+                </svg>
+            </div>
+            <div class="pc-info">
+                <div class="pc-title">Source Code</div>
+                <div class="pc-sub">Web Dev</div>
+            </div>
+            <div class="pc-badge">
+                <span class="badge-pill">Case Study</span>
+                <a href="https://github.com/naufalnrf29/monday"
+                    class="btn-see" target="_blank">
+                    See Detail
+                    <span class="btn-see-arrow">→</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Article Body -->
+        <div class="art-body">
+
+            <h2 class="reveal">Ringkasan Project</h2>
+
+            <p class="reveal">Monday adalah platform inventory management berbasis web yang dirancang untuk membantu
+                bisnis mengelola sistem pergudangan mereka secara efisien. Platform ini menghubungkan data gudang dengan
+                toko secara langsung melalui sistem warehousing, dilengkapi dengan fitur Point of Sales sederhana untuk
+                mencatat transaksi di tingkat toko.</p>
+
+            <p class="reveal">Dalam project ini saya merancang dua role utama dengan tanggung jawab yang berbeda. Super
+                admin berperan sebagai manager yang memiliki kendali penuh atas pengelolaan data toko, gudang, dan
+                keeper. Sementara keeper bertugas sebagai operator di lapangan yang mencatat setiap transaksi yang
+                terjadi di toko.</p>
+
+            <p class="reveal">Sistem ini dirancang agar alur data dari gudang ke toko berjalan transparan dan real-time,
+                sehingga manager selalu memiliki gambaran yang akurat tentang kondisi stok dan aktivitas transaksi di
+                setiap titik.</p>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="art-footer reveal">
+            <div class="tags">
+                <span class="tag">Web Dev</span>
+            </div>
+        </div>
+
+    </article>
+
+    <script>
+        function loadYT(el) {
+            const id = el.dataset.id;
+            el.innerHTML = `<iframe
+                src="https://www.youtube.com/embed/${id}?autoplay=1&rel=0"
+                frameborder="0"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowfullscreen>
+            </iframe>`;
+        }
+    </script>
+    <script src="../../js/article-reveal.js"></script>
+
+</body>
+
+</html>

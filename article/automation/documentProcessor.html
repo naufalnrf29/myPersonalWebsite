@@ -43,18 +43,18 @@
         <!-- Tag -->
         <div class="art-tag reveal">
             <div class="art-tag-dot"></div>
-            Web Dev
+            Automation
         </div>
 
         <!-- Title -->
-        <h1 class="art-title reveal">Jawara – Web-Based Learning Management System</h1>
+        <h1 class="art-title reveal">AI Document Processor – Automated Financial Document Logging</h1>
 
-        <!-- Thumbnail — ganti src dengan path gambar kamu -->
+        <!-- Thumbnail -->
         <div class="art-thumb reveal">
-            <img src="../img/jawara.png" alt="Project Thumbnail">
+            <img src="../img/documentProcessor.png" alt="AI Document Processor Thumbnail">
         </div>
 
-        <!-- Project Card — ganti href="#LINK_KAMU" dengan URL tujuan -->
+        <!-- Project Card -->
         <div class="project-card reveal">
             <div class="pc-logo">
                 <svg width="20" height="20" viewBox="0 0 16 16" fill="none">
@@ -66,11 +66,11 @@
             </div>
             <div class="pc-info">
                 <div class="pc-title">Source Code</div>
-                <div class="pc-sub">Web Dev</div>
+                <div class="pc-sub">Automation</div>
             </div>
             <div class="pc-badge">
                 <span class="badge-pill">Case Study</span>
-                <a href="https://github.com/naufalnrf29/jawara" class="btn-see" target="_blank">
+                <a href="https://github.com/naufalnrf29/Ai-Document-Processor" class="btn-see" target="_blank">
                     See Detail
                     <span class="btn-see-arrow">→</span>
                 </a>
@@ -82,26 +82,46 @@
 
             <h2 class="reveal">Ringkasan Project</h2>
 
-            <p class="reveal">Jawara adalah platform learning management system berbasis web yang menghadirkan
-                pengalaman belajar mengajar secara digital dalam satu ekosistem yang lengkap. Seluruh kebutuhan
-                pembelajaran tersedia dalam satu platform — dari manajemen kelas, distribusi materi, hingga fitur test
-                yang sudah built-in tanpa perlu beralih ke tools lain untuk membuat dan mengelola ujian atau kuis.
-            </p>
+            <p class="reveal">AI Document Processor adalah sistem otomasi yang menangani proses pencatatan dokumen
+                keuangan secara end-to-end. Mulai dari menerima dokumen, membaca isinya, mengekstrak informasi penting,
+                hingga mencatatnya ke dalam spreadsheet — seluruhnya berjalan otomatis tanpa perlu input manual dari
+                staff keuangan.</p>
 
-            <p class="reveal">Selain fitur test, platform ini juga mencakup manajemen kelas, upload dan distribusi
-                materi pembelajaran, serta pengelolaan aktivitas belajar mengajar secara menyeluruh.</p>
+            <p class="reveal">Sistem ini memantau folder Google Drive secara real-time. Setiap kali ada dokumen baru
+                yang di-upload — baik itu invoice, nota, kwitansi, atau faktur pajak — AI langsung membaca dan
+                mengekstrak data seperti nama vendor, nomor dokumen, tanggal, nominal, pajak, dan jatuh tempo. Data
+                tersebut kemudian dicatat otomatis ke Google Sheets.</p>
 
-            <p class="reveal">Dalam project ini saya merancang tiga role pengguna dengan kebutuhan yang berbeda. Super
-                admin yang mengelola keseluruhan data dan ekosistem platform. Teacher yang berperan sebagai pengajar —
-                mengelola kelas, mengupload materi, dan membuat test. Serta student sebagai peserta yang mengikuti
-                kelas, mengakses materi, dan mengerjakan test langsung di dalam platform.</p>
+            <p class="reveal">Sebelum dokumen diproses, sistem menjalankan beberapa validasi secara otomatis. Format
+                file diperiksa untuk memastikan hanya dokumen yang didukung yang masuk ke proses. Ukuran file dibatasi
+                agar tidak membebani sistem. Dan pengecekan duplikat dilakukan agar tidak ada dokumen yang tercatat dua
+                kali. Jika ada yang tidak lolos validasi, sistem langsung mengirim notifikasi email yang menjelaskan
+                alasan penolakannya.</p>
+
+            <p class="reveal">Tidak semua dokumen bisa dibaca dengan sempurna oleh AI — ada kalanya scan buram atau
+                format tulisan yang sulit dikenali. Untuk menangani ini, setiap dokumen diberi confidence score. Jika
+                skornya tinggi, data langsung dicatat otomatis. Jika skornya rendah, dokumen dipindahkan ke folder
+                terpisah dan tim keuangan mendapat notifikasi untuk melakukan review manual. Dengan mekanisme ini, tidak
+                ada data yang masuk tanpa quality check.</p>
+
+            <p class="reveal">Dari sisi dampak, <b>proses yang sebelumnya memakan waktu 3–5 menit per dokumen secara
+                    manual
+                    kini selesai dalam hitungan detik</b>. Untuk perusahaan yang memproses puluhan dokumen setiap hari,
+                ini
+                berarti penghematan waktu kerja yang signifikan — waktu yang sebelumnya habis untuk mengetik data kini
+                bisa dialokasikan ke pekerjaan yang lebih membutuhkan keahlian, seperti analisis keuangan atau
+                perencanaan cash flow.</p>
 
             <!-- Footer -->
             <div class="art-footer reveal">
                 <div class="tags">
-                    <span class="tag">Web Dev</span>
+                    <span class="tag">Automation</span>
+                    <span class="tag">AI</span>
+                    <span class="tag">n8n</span>
                 </div>
             </div>
+
+        </div>
 
     </article>
 

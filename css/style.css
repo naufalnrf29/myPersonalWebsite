@@ -1528,6 +1528,14 @@
                 grid-template-columns: 1fr;
             }
 
+            #web-dev .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            #ai-automation .featured-grid-top {
+                grid-template-columns: 1fr;
+            }
+
             /* Featured card — stacked */
             .featured-card {
                 grid-template-columns: 1fr;
@@ -1649,6 +1657,14 @@
             /* Wider card images on small screens */
             .card-img-wrap {
                 aspect-ratio: 16 / 9;
+            }
+
+            #web-dev .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            #ai-automation .featured-grid-top {
+                grid-template-columns: 1fr;
             }
 
             .footer-nav {
